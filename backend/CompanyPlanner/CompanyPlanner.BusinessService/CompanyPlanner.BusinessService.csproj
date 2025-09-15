@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Implementations\" />
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\CompanyPlanner.DataService\CompanyPlanner.DataService.csproj" />
+    <ProjectReference Include="..\CompanyPlanner.Infrastructure\CompanyPlanner.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

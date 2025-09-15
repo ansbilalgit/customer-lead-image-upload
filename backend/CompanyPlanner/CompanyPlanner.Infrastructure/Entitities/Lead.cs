@@ -1,13 +1,10 @@
-﻿using CompanyPlanner.Infrastructure.Entitities.Interfaces;
-
-namespace CompanyPlanner.Infrastructure.Entitities
+﻿namespace CompanyPlanner.Infrastructure.Entitities
 {
-    public class Lead : IProfile<LeadImage>
+    public class Lead
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string CompanyName { get; set; } = string.Empty;
 
-        // May have some other properties specific to Lead
-        public ICollection<LeadImage> Images { get; set; } = new List<LeadImage>();
+        public ICollection<LeadImage> Images { get; set; } = [];
     }
 }
